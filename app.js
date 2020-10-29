@@ -62,16 +62,15 @@ onScreenKeyboard.addEventListener('click', (e) => {
 	
     if (e.target.tagName === 'BUTTON'){
         e.target.className = 'chosen';
-    } 
-	
 	if (e.target.className === 'chosen'){	
         e.target.disabled = 'true';
 	}
-        
 	if (letterFound === null){
         lives[missed].setAttribute('src', 'images/lostHeart.png');
 		missed += 1;
-    }
+	}
+	}
+	
 	
 checkWin();
 
